@@ -6,10 +6,14 @@ import Battle from "./Battle/battle"
 import Expo from "./Expo/expo"
 import Kitforum from "./KitForum/kitforum"
 import Sql from "./SQL/sql"
+import useFetch from "../../hooks/useFetch"
 
 import "./Events.css"
 
 function Events() {
+  const {data, isLoading} = useFetch({
+    url: 'http://3.34.200.34/events'
+  })
   return (
     <>
       <Header/>
