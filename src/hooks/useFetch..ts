@@ -1,16 +1,18 @@
 import { useEffect, useState } from "react";
-// const API_URL = 'https://3.34.200.34/jobs';
 
 const useFetch = ({
-    API_URL = "https://3.34.200.34/jobs"
+  url = "http://3.34.200.34/events"
+}: {
+  url: string
 }) => {
-  const [data, setData] = useState<unknown>(null);
+
+  const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const fetchData = async () => {
     setIsLoading(true)
     try {
-      const response = await fetch(API_URL);
+      const response = await fetch(url);
       const data = await response.json();
       if (data.success){
         setData(data.data)

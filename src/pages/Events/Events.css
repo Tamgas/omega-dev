@@ -6,12 +6,12 @@
 }
 
 .events__button button{
-    padding: 10px 25px;
+    padding: 1px 18px;
     border: none;
     background: rgb(64, 224, 163);
     color: #f7f7f7;
+    filter: ();
 }
-
 
 .login-prompt {
     display: flex;
@@ -53,12 +53,11 @@
     margin-top: 20px;
 }
 
-
-
 .events-item{
     display: flex;
     flex-direction: column;
-    background: rgb(117, 237, 113);
+    background: rgb(30, 46, 51);
+    margin: 20px 0 20px 0;
 }
 
 .events-date{
@@ -70,7 +69,7 @@ time{
 }
 
 .events-title{
-    margin: 250px 0 0 30px;
+    margin: 200px 0 50px 30px;
     color: #fff;
     font-size: 27px;
 }
@@ -83,21 +82,27 @@ time{
     color: #fff;
 }
 
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 35px;
+}
 
 
 @media (max-width: 800px) {
 
     .events-title{
-        margin: 250px 0 0 30px;
+        margin: 250px 0 40px 30px;
         color: #fff;
-        font-size: 20px;
+        /* font-size: 20px; */
     }
 }
 
 @media (max-width: 660px) {
 
     .events-title{
-        margin: 170px 0 0 30px;
+        margin: 170px 0 40px 30px;
         color: #fff;
         font-size: 27px;
     }
