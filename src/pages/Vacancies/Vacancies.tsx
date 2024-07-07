@@ -2,8 +2,19 @@ import { Link } from "react-router-dom";
 import Footer from "../../Companent/Footer/Footer";
 import Header from "../../Companent/Header/Header";
 import "./Vacancies.css";
+import useFetch from "../../hooks/useFetch";
+import { JobList } from "../../Companent/JobList/jobList";
 
 function Vacancies() {
+    const{ data, isLoading } = useFetch({
+      url: "http://3.34.200.34/jobs"
+    })
+    console.log("data: ", data);
+
+    if(isLoading) {
+        return <div>Loading...</div>
+    }
+
   return (
     <>
       <Header />
@@ -48,33 +59,17 @@ function Vacancies() {
                         </picture>
                       </div>
                     </div>
-                    <div className="information" data-v-6dc437e8>
-                      <div className="jobs-item-field company" data-v-6dc437e8>
-                        <span className="label" data-v-6dc437e8>
-                          Компания
-                        </span>
-                        Validon Agency
-                      </div>
-                      <div className="jobs-item-field position" data-v-6dc437e8>
-                        <span className="label" data-v-6dc437e8>
-                          Должность
-                        </span>
-                        Нr менеджер
-                      </div>
-                      <div className="jobs-item-field price" data-v-6dc437e8>
-                        <span className="label" data-v-6dc437e8>
-                          Оклад
-                        </span>
-                        От 60000 RUB в месяц
-                      </div>
-                      <div className="jobs-item-field type" data-v-6dc437e8>
-                        <span className="label" data-v-6dc437e8>
-                          Тип
-                        </span>
-                        Удаленная работа
-                      </div>
-                    </div>
                   </div>
+                  {
+                    data && data.map((item: any) => 
+                      <JobList
+                          componyName={item?.organizatiom_name}
+                          companyRole={item?.position}
+                          salary ={`${item?.price_from} - ${item?.price_to} ${item?.current} ${item?.salary}`}
+                          type = {item?.jobType}
+                      />
+                    )
+                  }    
                 </a>
               </div>
             </div>
