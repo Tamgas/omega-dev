@@ -4,11 +4,13 @@ import "./Events.css"
 import { EventsList } from "../../Companent/EventsList/eventsList"
 import useFetch from "../../hooks/useFetch"
 
+
 function Events() {
-  const{ data, isLoading } = useFetch({url: "http://3.34.200.34/events"})
+  const{ data, isLoading } = useFetch({
+    url: "http://3.38.98.134/events"
+  })
     console.log("data: ", data);
 
-    
     if(isLoading) {
         return <div>Loading...</div>
     }
@@ -41,7 +43,6 @@ function Events() {
               <button className="btn next">Cледующая страница</button>
             </div>
             </div>
-            
         </div>    
         <Footer/>
     </>

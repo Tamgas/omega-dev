@@ -31,12 +31,31 @@
   padding: 21px;
   flex: 1;
 }
+
+.information{
+  display: flex;
+  justify-content: space-between;
+}
 .jobs-item .jobs-item-field.icon[data-v-6dc437e8] {
-  flex: 0 0 70px;
+  display: flex;
   justify-content: center;
 }
 .jobs-item .jobs-item-field[data-v-6dc437e8] {
   padding-right: 20px;
+ background: rgb(218, 215, 215);
+ padding: 5px;
+
+}
+
+.jobs-item-field .position{
+ display: flex;
+ flex-direction: column;
+}
+
+.jobs-list{
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .icon {
@@ -102,6 +121,11 @@ img {
 .jobs-item .jobs-item-field[data-v-6dc437e8] {
   padding-right: 20px;
 }
+
+.jobs-item-field .price{
+  display: flex;
+  flex-direction: column;
+}
 :after,
 :before {
   box-sizing: border-box;
@@ -120,7 +144,7 @@ img {
   display: block;
   font-size: 14px;
   letter-spacing: 0.03em;
-  color: #a7b0c2;
+  color: #616266;
   margin-bottom: 2px;
 }
 *,
