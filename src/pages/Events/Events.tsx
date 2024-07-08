@@ -38,10 +38,10 @@ function Events() {
                   }    
 
                 </div>
-            <div className="btns">
-              <button className="btn previous">Предыдующая страница</button>
-              <button className="btn next">Cледующая страница</button>
-            </div>
+                <div className="btns">
+                  <button className="btn previous">Предыдующая страница</button>
+                  <button className="btn next">Cледующая страница</button>
+                </div>
             </div>
         </div>    
         <Footer/>

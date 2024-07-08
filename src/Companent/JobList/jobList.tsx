@@ -22,7 +22,7 @@ export const JobList = ({
                     <div className="jobs-item-field icon" data-v-6dc437e8>
                         <div className="preview image contain white image"data-v-7ad410c8data-v-6dc437e8>
                             <picture data-v-7ad410c8>
-                                {/* {svgUrl} */}
+                              <img  className="joblistsvg" src={svgUrl} alt="" /> 
                             </picture>
                         </div>
 
@@ -30,28 +30,36 @@ export const JobList = ({
                             <div className="jobs-item-field company" data-v-6dc437e8>
                                 <span className="label" data-v-6dc437e8>
                                     Компания
-                                </span>    <br />
-                                    {componyName}
+                                </span>    
+                                    <h4>
+                                        {componyName}
+                                    </h4>
                             </div>
 
                             <div className="jobs-item-field position" data-v-6dc437e8>
                                 <span className="label" data-v-6dc437e8>
                                     Должность
-                                </span>     <br />
-                                {companyRole}
+                                </span>   
+                                    <h4>
+                                        {companyRole}
+                                    </h4>
                             </div>
 
                             <div className="jobs-item-field price" data-v-6dc437e8>
                                 <span className="label" data-v-6dc437e8>
                                     Оклад
-                                </span>      <br />
+                                </span>     
+                                    <h4>
                                         {salary}
+                                    </h4>
                             </div>
                             <div className="jobs-item-field type" data-v-6dc437e8>
                                 <span className="label" data-v-6dc437e8>
                                     Тип
-                                </span> <br />
-                                    {type}
+                                </span>
+                                    <h4>
+                                        {type}
+                                    </h4>
                             </div>
                         </div> 
                     </div>

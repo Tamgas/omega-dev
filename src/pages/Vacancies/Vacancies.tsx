@@ -25,11 +25,7 @@ function Vacancies() {
             <div className="vacancies__content">
               <div className="filter" data-v-6a5c720c>
                 <Link to={"/"}>
-                  <button
-                    className="add-vacancies create-list green"
-                    data-v-3fc4231a
-                    data-v-6a5c720c
-                  >
+                  <button className="add-vacancies create-list green"data-v-3fc4231adata-v-6a5c720c>
                     Добавить вакансию
                   </button>
                 </Link>
