@@ -30,7 +30,10 @@ function Header() {
                 <div className="header__content">
                     <div className="header-logo">
                         <img
-                            onClick={logoHeader}src="https://devkg.com/js/img/logo.458f2cd.svg"alt=""/>
+                            onClick={logoHeader}
+                            src="https://devkg.com/js/img/logo.458f2cd.svg"
+                            alt=""
+                        />
                     </div>
 
                     <div className="header__nav">

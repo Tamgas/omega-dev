@@ -26,35 +26,17 @@
 }
 .content {
   max-width: 1176px;
-  margin:1px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 21px;
   flex: 1;
 }
-
-.information{
-  display: flex;
-  justify-content: space-between;
-}
 .jobs-item .jobs-item-field.icon[data-v-6dc437e8] {
-  display: flex;
+  flex: 0 0 70px;
   justify-content: center;
-  padding: 20px 0 20px 30px;
 }
 .jobs-item .jobs-item-field[data-v-6dc437e8] {
   padding-right: 20px;
- background: rgb(243, 242, 242);
- padding: 5px;
-
-}
-
-.jobs-item-field .position{
- display: flex;
- flex-direction: column;
-}
-
-.jobs-list{
-  display: flex;
-  justify-content: space-between;
-
 }
 
 .icon {
@@ -68,21 +50,6 @@
   border-radius: 2px;
   margin-top: 3px;
 }
-
-h4{
-  color: rgb(4, 40, 74);
-}
-
-.joblistsvg{
-  width: 35px;
-  height: 35px;
-  border-radius: 2px;
-margin:0 20px 0 0 ;}
-
-picture[data-v-7ad410c8] img .jobList{
-  border-radius: 50%;
-}
-
 .preview.white[data-v-7ad410c8] {
   background: #fff;
 }
@@ -121,9 +88,10 @@ picture[data-v-7ad410c8] img .jobList{
   -o-object-position: center;
   object-position: center;
 }
-
-
-
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
 .jobs-item .information[data-v-6dc437e8] {
   display: flex;
   width: 100%;
@@ -133,11 +101,6 @@ picture[data-v-7ad410c8] img .jobList{
 }
 .jobs-item .jobs-item-field[data-v-6dc437e8] {
   padding-right: 20px;
-}
-
-.jobs-item-field .price{
-  display: flex;
-  flex-direction: column;
 }
 :after,
 :before {
@@ -157,7 +120,7 @@ picture[data-v-7ad410c8] img .jobList{
   display: block;
   font-size: 14px;
   letter-spacing: 0.03em;
-  color: #616266;
+  color: #a7b0c2;
   margin-bottom: 2px;
 }
 *,
