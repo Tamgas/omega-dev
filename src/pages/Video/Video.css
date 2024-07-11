@@ -10,31 +10,26 @@
     display: flex;
     justify-content: end;
 }
-
-.main-block {
-    position: relative;
-}
-
-.video__content{
+.video-block {
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-width: 100%;
     gap: 20px;
 }
-
+.main-block {
+    position: relative;
+}
 .first__block img {
     width: 570px;
     height: 361px;
 }
-
 .first__block-title {
-    padding: 30px;
     position: absolute;
     z-index: 10;
     font-size: 25px;
     width: 570px;
     height: 355px;
-    top: 1px;
+    top: 10px;
     backdrop-filter: blur(10px);
     color: white;
 }
@@ -43,13 +38,13 @@
     z-index: 10;
     width: 570px;
     height: 355px;
-    top: 280px;
-    left: 35px;
+    top: 250px;
+    left: 10px;
     color: white;
 }
 .first__block-data {
     position: absolute;
-    top: 280px;
+    top: 250px;
     z-index: 10;
     color: white;
     left: 300px;
