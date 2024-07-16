@@ -1,0 +1,11 @@
+services:
+  fronted:
+    image: node:18
+    container_name: omega-dev
+    volumes:
+      - .:/src
+    working_dir: /src
+    command: sh -c "npm install && npm run build && npm start"
+    ports:
+      - "3000:3000"
+  postgres: 
